@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:wght@500&display=swap">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form action="/" method="post">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="email" name="email" 
+                    placeholder="이메일을 입력하세요."
+                    onfocus="this.placeholder=''" 
+                    onblur="this.placeholder='이메일을 입력하세요.'"
+                    required>
+                <input type="password" name="password" 
+                    placeholder="페스워드를 입력하세요."
+                    onfocus="this.placeholder=''" 
+                    onblur="this.placeholder='페스워드을 입력하세요.'"
+                    required>
+                <input type="text" name="name" 
+                    placeholder="이름을 입력하세요."
+                    onfocus="this.placeholder=''" 
+                    onblur="this.placeholder='이름을 입력하세요.'"
+                    required>
+                <button>Sign up</button>
+            </form>
+        </div>
+        <div class="login">
+            <form action="/main" method="post">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="emailLogin" 
+                    placeholder="이메일을 입력하세요."
+                    onfocus="this.placeholder=''" 
+                    onblur="this.placeholder='이메일을 입력하세요.'"
+                    required>
+                <input type="password" name="passwordLogin" 
+                    placeholder="페스워드를 입력하세요."
+                    onfocus="this.placeholder=''" 
+                    onblur="this.placeholder='페스워드을 입력하세요.'"
+                    required>
+                <button>Login</button>
+                <a id="next" href="http://127.0.0.1:5500/second.html">next</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

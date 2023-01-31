@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+     background: radial-gradient(circle farthest-corner at 32% 106%,#2e17c5 0%,#6251ff 5%,#103dae 18%,#1116aa 32%,transparent 82%) , linear-gradient(135deg,#31088a 24%,#456bde 58%);
+}
+
+.main {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    background: url("./blue.jpg") no-repeat center / cover;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+#chk {
+    display: none;
+}
+
+.signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    color: #fff;
+    font-size: 3em;
+    justify-content: center;
+    display: flex;
+    margin: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.signup input {
+    width: 60%;
+    height: 20px;
+    background: #ebebeb;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.signup input:hover  {
+    background: #ffffff;
+}
+
+.signup input:focus {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 1px rgb(255, 255, 255);    
+}
+
+
+
+button {
+    width: 60%;
+    height: 40px;
+    background: #3a418c;
+    justify-content: center;
+    margin: 10px auto;
+    display: block;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    margin-top: 25px;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #313dc1;
+    box-shadow: 0px 0px 25px 1px #313dc1;    
+}
+
+.login {
+    height: 580px;
+    background: none;
+    transform: translateY(-145px);
+    border-radius: 60% / 10%;
+    transition: .8s ease-in-out;
+}
+
+.login label {
+    font-size: 40px;
+    color: #313dc1;
+    transform: scale(.6);
+}
+
+#chk:hover ~ .login label {
+    transform: scale(.7);
+    text-shadow: 1px 1px 25px #313dc1;
+}
+
+#chk:checked ~ .login {
+    background: #fff;
+    transform: translateY(-620px);
+}
+
+#chk:checked ~ .login label {
+    padding-top: 100px;
+    transform: scale(1);
+}
+
+.login input {
+    width: 60%;
+    height: 20px;
+    background: #ebebeb;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.login input:hover  {
+    background: #cecece;
+}
+
+.login input:focus {
+    background: #cecece;
+}
+
+#next {
+    font-size: 1em;
+    justify-content: center;
+    display: flex;
+    margin: 40px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
